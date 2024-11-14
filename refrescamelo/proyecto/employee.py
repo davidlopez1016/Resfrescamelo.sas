@@ -1,11 +1,11 @@
 class Employee:
-    def init(self, emp_id, first_name, last_name, email, phone, role=None, shift="", uniform_color=None, assigned_area=None):
-        self.emp_id = emp_id
+    def __init__(self, emp_id, first_name, last_name, email, phone, role=None, shift="", uniform_color=None, assigned_area=None):
+        self.__emp_id = emp_id
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
         self.phone = phone
-        self.role = role
+        self.__role = role
         self.shift = shift
         self.uniform_color = uniform_color
         self.assigned_area = assigned_area
